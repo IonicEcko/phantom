@@ -32,8 +32,7 @@ func main() {
 	flag.Parse()
 
 	if *serverArg == "" {
-		flag.Usage()
-		return
+		*serverArg = "spawnpoint.pixel.id.au:19132"
 	}
 
 	bindAddressString = *bindArg
